@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+    text-align: justify;
+}
+
+
+
+.container {
+    display: flex;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+}
+
+#formulario-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.espaco-em-branco {
+    height: 50px; /* ajuste o valor para o espaço desejado */
+}
+
+
+.formulario, .info {
+    flex: 1;
+    padding: 20px;
+}
+
+
+.formulario h2, .info h2 {
+    color: #0b44ff;
+}
+
+
+input, select, textarea, button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+button {
+    background-color: #2a01f4;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+
+button:hover {
+    background-color: #031f75;
+}
+
+
+.info {
+    border-left: 1px solid #ccc;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 90%;
+    max-height: 300px;
+    margin-top: 90px;
+    text-align: justify;
+}
+
+
+.info p, .info strong {
+    margin: 0 0 10px 0;
+}
+
+
+footer {
+    background-color: #001f3f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto; /* Empurra o footer para o final */
+    width: 100%;
+}
+
+
+/* Consultas de mídia para responsividade */
+
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+
+    .formulario, .info {
+        width: 100%;
+    }
+
+
+    .info {
+        margin-top: 0;
+        border-left: none;
+    }
+
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        gap: 15px;
+    }
+
+
+    .formulario, .info {
+        width: 100%;
+    }
+
+
+    footer {
+        padding: 15px;
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+        gap: 10px;
+    }
+
+
+    .formulario, .info {
+        width: 100%;
+    }
+
+
+    input, select, textarea, button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+
+    footer {
+        padding: 10px;
+        font-size: 12px;
+    }
+}

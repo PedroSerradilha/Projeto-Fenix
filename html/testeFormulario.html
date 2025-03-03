@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contato.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="formulario-contato">
+        <div class="espaco-em-branco"></div>
+        <div class="container">
+            <div class="formulario">
+                <h2>Entre em contato conosco:</h2>
+                <br>
+                <form metod="post" action="../php/envia.php" id="contact-form">
+                    <select name="assunto" required>
+                        <option value="duvida">Desenvolvimento Web</option>
+                        <option value="critica">Análise de dados empresarial</option>
+                        <option value="sugestao">Search Engine Optimization</option>
+                        <option value="">Outros</option>
+                    </select>
+                    <input type="text" name="nome" placeholder="Nome" required>
+                    <input type="text" name="empresa" placeholder="Empresa">
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <input type="tel" name="telefone" placeholder="Telefone">
+                    <textarea name="mensagem" placeholder="Digite sua mensagem " rows="5"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <div class="info">
+                <h2>Central de Atendimento</h2>
+                <br>
+                <div class="info-box">
+                    <p>Nossos canais de comunicação estão sempre abertos para diversas dúvidas que possam surgir, como também sugestões para a empresa.</p>
+                    <p>A TecUp agradece seu contato!</p>
+                    <p><strong>Horário de atendimento:</strong></p>
+                    <p>Segunda a Sexta das 08:30 às 18:00</p>
+                    <p><strong>Email:</strong></p>
+                    <p>tecup.sac@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
