@@ -1,5 +1,4 @@
 <?php
-
     $assunto = addslashes($_POST['assunto']);
     $nome = addslashes($_POST['nome']);
     $empresa = addslashes($_POST['empresa']);
@@ -8,14 +7,18 @@
     $mensagem = addslashes($_POST['mensagem']);
     
     $destino = "tecup.sac@gmail.com";
-    $assunto = "Dúvidas";
+    $assuntoEmail = "Dúvidas";
 
-    $corpo = "Nome: ".$nome."\n"."Empresa: ".$empresa."\n"."Assunto: ".$assunto."E-mail: ".$email."\n"."Telefone: ".$telefone."\n"."Mensagem: ".$mensagem;
+    $corpo = "Nome: $nome\nEmpresa: $empresa\nAssunto: $assunto\nE-mail: $email\nTelefone: $telefone\nMensagem: $mensagem";
 
-    $cabecario = "From: tecup.sac@gmail.com"."\n"."Replay-to: ".$email."\n"."X=Mailer:PHP/".phpversion();
+    $cabecalho = "From: $email\r\n";
+    $cabecalho .= "Reply-To: $email\r\n";
+    $cabecalho .= "X-Mailer: PHP/" . phpversion();
 
-    if(mail($destino, $assunto, $corpo, $cabecario)){
-        echo("E-mail enviado com sucesso!");
+    if(mail($destino, $assuntoEmail, $corpo, $cabecalho)){
+        echo "E-mail enviado com sucesso!";
+    } else {
+        echo "Falha no envio do e-mail.";
     }
-
 ?>
+
