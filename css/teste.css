@@ -102,7 +102,7 @@ main {
 .sobre-nos {
     background-color: white;
     padding: 40px;
-    max-width: 900px;
+    max-width: 1170px;
     margin: 0 auto;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -127,7 +127,7 @@ main {
 .servicos {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 4px;
     margin-top: 30px;
     flex-wrap: wrap;
 }
@@ -141,7 +141,8 @@ main {
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     text-align: justify;
-    border: 4px solid black;
+    border: 3px solid black;
+    word-spacing: 0.5px;
 }
 
 .card h2 {
@@ -153,6 +154,9 @@ main {
 .card p {
     font-size: 1rem;
     line-height: 1.5;
+    text-align-last: left; /* Isso garante que a última linha do parágrafo tenha um alinhamento mais natural */
+    margin-bottom: 10px; /* Ajuste o espaçamento entre parágrafos */
+    flex-grow: 1; /* Faz com que o texto ocupe o espaço restante, caso necessário */
 }
 
 
@@ -236,13 +240,17 @@ img {
         text-align: center;
     }
 
-    .imagem-servico, .imagem-seo, .imagem-analise-dados {
+    .imagem-seo, .imagem-analise-dados {
         max-width: 100%;
     }
 
     .texto-servico, .texto-seo, .texto-analise-dados {
         max-width: 100%;
     }
+}
+
+.imagem-servico {
+    max-width: 45%;
 }
 
 @media (max-width: 480px) {
