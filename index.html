@@ -3,165 +3,383 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TecUP Soluções Inteligentes</title>
+    <title>Fenix Capivari - Informática e Tecnologia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="../css/teste.css">
     <link rel="stylesheet" href="../css/contato.css">
+    <link rel="icon" type="image/png" href="/img/logo.fenix1.png">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script defer src="script.js"></script>
 </head>
 <body>
+
     <header>
-        <div class="logo">
-            <img src="../assets/logo4.png" alt="Logo da TecUp">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#quem-somos">Quem Somos</a></li>
-                <li class="dropdown">
-                    <a href="#">Serviços ▼</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#desenvolvimento-web" class="scroll-link">Desenvolvimento Web</a></li>
-                        <li><a href="#analise-dados" class="scroll-link">Análise de Dados</a></li>
-                        <li><a href="#seo" class="scroll-link">Search Engine Optimization</a></li>
-                    </ul>
-                </li>
-                <li><a href="#formulario-contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+      <div class="logo">
+          <img src="img/logo.fenix1.png" alt="Logo da Loja">
+      </div>
+
+      <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+
+      <nav class="nav-links">
+          <a href="#">Home</a>
+          <a href="#produtos">Produtos</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#quem-somos">Sobre nós</a>
+          <a href="#form">Contato</a>
+      </nav>
+  </header>
 
     <main>
-        <section id="quem-somos" class="sobre-nos">
-            <h1>Quem somos?</h1>
-            <p>
-                Somos uma empresa de tecnologia focada em <strong>transformar ideias em soluções digitais poderosas.</strong>
-                Especialistas em <strong>criação de sites estratégicos, análise de dados inteligentes</strong> e 
-                <strong>SEO de alta performance</strong>, ajudamos sua marca a <strong>crescer, se destacar e 
-                conquistar resultados reais.</strong> Unimos <strong>inovação, estratégia e expertise</strong> 
-                para fortalecer sua presença online e impulsionar seu negócio.
-                <strong>Seu sucesso é a nossa missão.</strong>
-            </p>
-        </section>
 
+        <div class="carrossel-container">
+            <div class="carrossel">
+              <img src="img/frentefenix.png" class="slide ativo" alt="Imagem 1">
+              <img src="img/internafenix.jpg" class="slide" alt="Imagem 2">
+              <img src="img/logo.fenix1.png" class="slide" alt="Imagem 3">
+            </div>
+            <div class="bolinhas">
+              <span class="bolinha ativa" onclick="mudarSlide(0)"></span>
+              <span class="bolinha" onclick="mudarSlide(1)"></span>
+              <span class="bolinha" onclick="mudarSlide(2)"></span>
+            </div>
+        </div>
+
+        <section id="quem-somos" class="secao-quem-somos">
+          <div class="imagem-quem-somos">
+              <img src="../img/frentefenix.png" alt="Imagem representando a TecUp">
+          </div>
+          <div class="texto-quem-somos">
+              <h1>Quem somos?</h1>
+              <p>
+                  Desde 2002, a <strong>Loja Fênix</strong> tem se dedicado a oferecer uma ampla variedade de produtos e soluções para atender às necessidades dos nossos clientes.
+                  Com uma equipe de profissionais qualificados e em constante treinamento, garantimos um atendimento ágil, eficiente e personalizado.
+              </p>
+              <p>
+                  Nosso compromisso é proporcionar uma experiência de compra diferenciada e de confiança.
+                  <strong>Consulte-nos e descubra como podemos ajudar você!</strong>
+              </p>
+          </div>
+      </section>
+
+        <section id="servicos"  class="card-destaque">
+            <div class="conteudo-card">
+              <h2>Por que escolher a Fênix Capivari?</h2>
+              <p>Com anos de experiência no mercado de tecnologia, somos especialistas em manutenção de equipamentos de informática e eletrônicos, oferecendo produtos e serviços de qualidade.</p>
+              <div class="chamada-destaque"> Conheça nossos serviços abaixo</div>
+            </div>
+          </section>
+        
         <section class="servicos">
             <div class="card">
-                <i class="fas fa-laptop-code"></i>
-                <h2>Qualidade e inovação nos projetos</h2>
+                <img class="imagem-card" src="img/manucompL.png" alt="Manutenção de Computadores">
+                <h2>Manutenção de Computadores</h2>
                 <br>
-                <p>Trabalhamos com eficiência e personalização, garantindo soluções alinhadas às suas necessidades e objetivos.</p>
+                <p>Serviço que garante o bom desempenho do seu equipamento, com limpeza, correções, atualizações e otimizações.</p>
             </div>
             <div class="card">
-                <i class="fas fa-chart-line"></i>
-                <h2>Confiança e tecnologia caminhando juntas</h2>
+                <img class="imagem-card" src="img/manueletroL.png" alt="Manutenção de Eletrônicos">
+                <h2>Manutenção de Eletrônicos</h2>
                 <br>
-                <p>Transformamos dados brutos em informações valiosas, ajudando sua empresa a tomar decisões estratégicas e impulsionar o crescimento.</p>
+                <p>Cuidamos do reparo e bom funcionamento de diversos aparelhos, com diagnósticos precisos e soluções rápidas.</p>
             </div>
             <div class="card">
-                <i class="fas fa-search"></i>
-                <h2>Visão estratégica empresarial</h2>
+                <img class="imagem-card" src="img/repaespeciL.png" alt="Reparos Especializados">
+                <h2>Reparos Especializados</h2>
                 <br>
-                <p>Unimos tecnologia e inteligência de mercado para criar soluções inovadoras que antecipam tendências e impulsionam o crescimento e a competitividade das empresas.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-search"></i>
-                <h2>Do presente para o futuro juntos</h2>
-                <br>
-                <p>Ajudamos empresas a se adaptarem às novas demandas tecnológicas, oferecendo soluções inovadoras que otimizam processos e promovem a transformação digital.</p>
+                <p>Serviços técnicos com foco em precisão e qualidade, ideais para consertos detalhados e específicos em equipamentos variados.</p>
             </div>
         </section>
 
-        <section id="desenvolvimento-web" class="pagina-servico">
-            <div class="imagem-servico">
-                <img src="../assets/desen2.png" alt="Desenvolvimento Web">
+        
+              
+        <section id="produtos" class="secao-produto-completa">
+
+            <!-- Título principal da seção -->
+            <div class="titulo-produtos">
+                <h1>Nossa linha de produtos!</h1>
             </div>
-            <div class="texto-servico">
-                <h1>Desenvolvimento Web Personalizado</h1>
-                <p>Desenvolvemos sites modernos e responsivos para sua empresa, garantindo alta performance, segurança e otimização para SEO.</p>
-                <ul>
-                    <li><strong>Sites responsivos e rápidos</strong></li>
-                    <p>Criamos sites que se adaptam perfeitamente a qualquer dispositivo, garantindo navegação fluida e carregamento rápido.</p>
-                    <li><strong>Plataformas personalizadas</strong></li>
-                    <p>Desenvolvemos soluções sob medida para atender às necessidades específicas do seu negócio.</p>
-                    <li><strong>SEO e otimização para mecanismos de busca</strong></li>
-                    <p>Melhoramos a visibilidade do seu site no Google com estratégias de SEO, atraindo mais visitantes e potenciais clientes.</p>
-                </ul>
+        
+            <!-- Seção Computadores -->
+            <section id="desenvolvimento-web" class="pagina-servico">
+                <div class="imagem-servico">
+                    <img src="../img/computadorB.png" alt="Desenvolvimento Web">
+                </div>
+                <div class="texto-servico">
+                    <h1>Computadores</h1>
+                    <p>Trabalhamos com diversos tipos e marcas de equipamentos como:</p>
+                    <ul>
+                        <li><strong>Linha completa de Notebooks e Desktops</strong></li>
+                        <p>Oferecemos opções para todos os tipos de uso, desde tarefas básicas até aplicações avançadas.</p>
+                        <li><strong>Computadores Office</strong></li>
+                        <p>Projetados para ambientes corporativos, com desempenho confiável e ótimo custo-benefício.</p>
+                        <li><strong>Mini Desktops</strong></li>
+                        <p>Compactos e eficientes, perfeitos para quem precisa de performance ocupando pouco espaço.</p>
+                        <li><strong>Trabalhamos com produtos novos e seminovos</strong></li>
+                        <p>Modelos variados com excelente performance e preços acessíveis, incluindo opções revisadas e garantidas.</p>
+                        <li><strong>Servidores</strong></li>
+                        <p>Soluções robustas e escaláveis para empresas que precisam de desempenho e segurança em rede.</p>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="divisor-secao">
+                <img src="../img/divisor-laranja.png" alt="Divisor Laranja">
             </div>
+        
+            <!-- Seção Linha Gamer -->
+            <section id="analise-dados" class="pagina-servico invertido pagina-analise-dados">
+                <div class="imagem-servico imagem-analise-dados">
+                    <img src="../img/linhagamerB.png" alt="Análise de Dados">
+                </div>
+                <div class="texto-servico texto-analise-dados">
+                    <h1>Linha Gamer</h1>
+                    <p>Monte seu setup dos sonhos com nossa linha gamer completa! Produtos de alta performance, design moderno e equipamentos que garantem a melhor experiência para jogadores de todos os níveis.</p>
+                    <ul>
+                        <li><strong>Linha completa de monitores</strong></li>
+                        <p>Telas com alta resolução, taxas de atualização elevadas e tempo de resposta ideal para games competitivos.</p>
+                        <li><strong>Montagem personalizada de PCs</strong></li>
+                        <p>Montamos seu PC gamer sob medida, com os melhores componentes e desempenho garantido.</p>
+                        <li><strong>Revenda exclusiva Red Dragon</strong></li>
+                        <p>Trabalhamos com uma das marcas mais respeitadas no mundo gamer, garantindo qualidade e performance.</p>
+                        <li><strong>Cadeiras Gamer à pronta entrega</strong></li>
+                        <p>Conforto e ergonomia para longas sessões de jogo, com modelos disponíveis para entrega imediata.</p>
+                        <li><strong>Periféricos Gamer (Teclado, Mouse e Fone)</strong></li>
+                        <p>Conjunto completo com design moderno, performance precisa e som imersivo para elevar sua experiência nos jogos.</p>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="divisor-secao">
+                <img src="../img/divisor-laranja.png" alt="Divisor Laranja">
+            </div>
+        
+            <!-- Seção Tecnologia -->
+            <section id="seo" class="pagina-servico pagina-seo">
+                <div class="imagem-servico">
+                    <img src="../img/tecnologiaB.png" alt="Search Engine Optimization">
+                </div>
+                <div class="texto-servico texto-seo">
+                    <h1>Tecnologia</h1>
+                    <p>As últimas novidades em tecnologia para facilitar o seu dia a dia e manter você sempre conectado com estilo, praticidade e qualidade.</p>
+                    <ul>
+                        <li><strong>Celulares e acessórios</strong></li>
+                        <p>Smartphones modernos e uma linha completa de acessórios para proteção, carregamento e conectividade.</p>
+                        <li><strong>Tablets</strong></li>
+                        <p>Mobilidade e desempenho para estudar, trabalhar ou se divertir onde quiser.</p>
+                        <li><strong>Alexa</strong></li>
+                        <p>Assistentes inteligentes que facilitam tarefas, controlam dispositivos e trazem praticidade à sua rotina.</p>
+                        <li><strong>Caixas de som JBL</strong></li>
+                        <p>Qualidade sonora e potência com o melhor da linha JBL para curtir suas músicas em qualquer lugar.</p>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="divisor-secao">
+                <img src="../img/divisor-laranja.png" alt="Divisor Laranja">
+            </div>
+        
+            <!-- Seção Office -->
+            <section id="office" class="pagina-servico invertido">
+                <div class="imagem-servico">
+                    <img src="../img/linhaofficeB.png" alt="Search Engine Optimization">
+                </div>
+                <div class="texto-servico">
+                    <h1>Linha Office</h1>
+                    <p>Soluções completas para escritórios de todos os tamanhos, com equipamentos e suprimentos que garantem produtividade, economia e eficiência no dia a dia.</p>
+                    <ul>
+                        <li><strong>Impressoras de pequeno, médio e grande porte</strong></li>
+                        <p>Modelos ideais para diferentes demandas, desde uso pessoal até ambientes corporativos com alto volume de impressão.</p>
+                        <li><strong>Aluguel de equipamentos</strong></li>
+                        <p>Economia e praticidade com locação de impressoras e outros dispositivos com suporte técnico incluso.</p>
+                        <li><strong>Venda de toners e cartuchos (originais e compatíveis)</strong></li>
+                        <p>Suprimentos de qualidade para garantir impressões nítidas e durabilidade dos equipamentos.</p>
+                        <li><strong>Sulfites e material de escritório</strong></li>
+                        <p>Tudo o que você precisa para manter a rotina do escritório funcionando com organização e praticidade.</p>
+                        <li><strong>Periféricos e acessórios</strong></li>
+                        <p>Mouses, teclados, hubs USB, cabos e muito mais para complementar sua estação de trabalho.</p>
+                    </ul>
+                </div>
+            </section>
+        
         </section>
+        
+        <section class="vantagens">
+            <section class="titulo-produtos2">
+              <h1>Vantagens de Comprar Conosco</h1>
+              <br><br>
+            </section>
+            <div class="vantagens-container">
+              <div class="vantagem-card">
+                <img src="../img/garantia.png" alt="Atendimento Personalizado">
+                <h3>Garantia e Confiança</h3>
+                <p>Todos os serviços e produtos têm garantia e passam por verificação de qualidade.</p>
+              </div>
+              <div class="vantagem-card">
+                <img src="../img/atendimento.png" alt="Garantia e Qualidade">
+                <h3>Atendimento Personalizado</h3>
+                <p>Soluções sob medida para cada cliente, com atenção e cuidado em cada detalhe.</p>
+              </div>
+              <div class="vantagem-card">
+                <img src="../img/qualidade.png" alt="Entrega Rápida">
+                <h3>Qualidade</h3>
+                <p>Trabalhamos com marcas confiáveis e produtos originais.</p>
+              </div>
+              <div class="vantagem-card">
+                <img src="../img/suptec.png" alt="Suporte Técnico">
+                <h3>Suporte Técnico Especializado</h3>
+                <p>Nossa equipe é qualificada para te ajudar antes, durante e depois da compra, com manutenção especializada.</p>
+              </div>
+              <div class="vantagem-card">
+                <img src="../img/agiliefi.png" alt="Variedade de Produtos">
+                <h3>Agilidade e Eficiência</h3>
+                <p>Serviços realizados com rapidez, sem abrir mão da qualidade.</p>
+              </div>
+              <div class="vantagem-card">
+                <img src="../img/montagempc.png" alt="Preços Competitivos">
+                <h3>Montagem de PCs Sob Medida</h3>
+                <p>Montamos o computador ideal para sua necessidade, seja para jogos, trabalho ou estudos.</p>
+              </div>
+            </div>
+          </section>                         
 
-        <section id="analise-dados" class="pagina-servico pagina-analise-dados">
-            <div class="imagem-servico imagem-analise-dados">
-                <img src="../assets/anagrafi.png" alt="Análise de Dados">
-            </div>
-            <div class="texto-servico texto-analise-dados">
-                <h1>Análise de Dados Estratégica</h1>
-                <p>Transformamos dados brutos em insights valiosos para seu negócio, ajudando na tomada de decisões e aumentando a eficiência operacional.</p>
-                <ul>
-                    <li><strong>Relatórios interativos e personalizados</strong></li>
-                    <p>Visualize seus dados de forma clara e dinâmica, facilitando a tomada de decisões.</p>
-                    <li><strong>Modelagem preditiva e análise estatística</strong></li>
-                    <p>Utilizamos inteligência de dados para prever tendências e identificar padrões estratégicos.</p>
-                </ul>
-            </div>
-        </section>        
-
-        <section id="seo" class="pagina-servico">
-            <div class="imagem-servico">
-                <img src="../assets/seoimg.png" alt="Search Engine Optimization">
-            </div>
-            <div class="texto-servico">
-                <h1>Otimização de Busca (SEO)</h1>
-                <p>Melhore o ranqueamento do seu site no Google e aumente sua visibilidade online com estratégias avançadas de SEO.</p>
-                <ul>
-                    <li><strong>SEO Técnico</strong></li>
-                    <p>Garantimos que seu site funcione sem problemas e seja fácil de encontrar no Google. Ajustamos a estrutura, velocidade e segurança para que os buscadores priorizem suas páginas.</p>
-                    <li><strong>Conteúdo Otimizado</strong></li>
-                    <p>Criamos textos envolventes e estratégicos, com as palavras certas para que seu público encontre seu site de forma natural ao pesquisar no Google.</p>
-                    <li><strong>Monitoramento e Análises</strong></li>
-                    <p> Acompanhamos o desempenho do seu site e fazemos ajustes constantes para que ele continue bem posicionado e atraindo visitantes.</p>
-                </ul>
-            </div>
+        <section id="form"  class="titulo-produtos2">
+          <h1>Entre em contato conosco!</h1>
         </section>
 
         <section id="formulario-contato">
             <div class="espaco-em-branco"></div>
             <div class="container">
-                <div class="formulario">
-                    <h2>Entre em contato conosco:</h2>
-                    <br>
-                    <form metod="post" id="contact-form">
-                        <select name="assunto" required>
-                            <option value="duvida">Desenvolvimento Web</option>
-                            <option value="critica">Análise de dados empresarial</option>
-                            <option value="sugestao">Search Engine Optimization</option>
-                            <option value="">Outros</option>
-                        </select>
-                        <input type="text" name="nome" placeholder="Nome" required>
-                        <input type="text" name="empresa" placeholder="Empresa">
-                        <input type="email" name="email" placeholder="E-mail" required>
-                        <input type="tel" name="telefone" placeholder="Telefone">
-                        <textarea name="mensagem" placeholder="Digite sua mensagem " rows="5"></textarea>
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
-                <div class="info">
-                    <h2>Central de Atendimento</h2>
-                    <br>
-                    <div class="info-box">
-                        <p>Nossos canais de comunicação estão sempre abertos para diversas dúvidas que possam surgir, como também sugestões para a empresa.</p>
-                        <p>A TecUp agradece seu contato!</p>
-                        <p><strong>Horário de atendimento:</strong></p>
-                        <p>Segunda a Sexta das 08:30 às 18:00</p>
-                        <p><strong>Email:</strong></p>
-                        <p>tecup.sac@gmail.com</p>
+              <div class="formulario">
+                <form method="post" id="contact-form">
+                  <div class="custom-select-wrapper">
+                    <div class="custom-select" id="dropdown">
+                      <span id="selected">Escolha uma opção</span>
+                      <span class="arrow">▼</span>
+                      <div class="custom-options" id="options">
+                        <div data-value="duvida">Produtos</div>
+                        <div data-value="critica">Serviços</div>
+                        <div data-value="sugestao">Manutenções</div>
+                        <div data-value="outros">Outros</div>
+                      </div>
                     </div>
+                    <!-- Campo oculto para envio -->
+                    <input type="hidden" name="assunto" id="selected-value" value="duvida">
+                  </div>
+          
+                  <input type="text" name="nome" placeholder="Nome" required>
+                  <input type="text" name="empresa" placeholder="Empresa">
+                  <input type="email" name="email" placeholder="E-mail" required>
+                  <input type="tel" name="telefone" placeholder="Telefone">
+                  <textarea name="mensagem" placeholder="Digite sua mensagem " rows="5"></textarea>
+                  <button type="submit">Enviar</button>
+                </form>
+              </div>
+
+              <div class="info">
+                <h2>Central de Atendimento</h2>
+                <br>
+                <div class="info-box">
+                  <p>Nossos canais de comunicação estão sempre abertos para diversas dúvidas que possam surgir, como também sugestões para a empresa.</p>
+                  <p style="font-size: 18px;"><strong>Horário de atendimento:</strong></p>
+                  <p>Segunda a Sexta das 08:30 às 18:00</p>
+                  <p>Sábado das 09:00 às 12:30</p>
+                  <p style="font-size: 18px;"><strong>Email:</strong></p>
+                  <p>vendas@fenixcapivari.com.br</p>
+                  <p style="font-size: 18px;"><strong>Nossos meios de contato:</strong></p>
+                  <p>Telefone: (19) 3491-6333</p>
+                  <p>Whatsapp: (19) 99679-4333</p>
+                  <div class="redes-sociais">
+                    <a href="https://wa.me/5519996794333" target="_blank" class="whatsapp">
+                      <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.instagram.com/fenixcapivari" target="_blank" class="instagram">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="vendas@fenixcapivari.com.br" class="email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
+          </div>
+          </section>
+
+          <br><br><br><br>
+
+          <section id="mapa">
+            <section class="titulo-produtos2">
+                <h1>Nossa Localização</h1>
+                <br><br>
+            </section>
+            <div style="width: 99.7%; max-width: 100%; height: 300px;">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.6608374927764!2d-47.507275523804076!3d-22.99949614119271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c61c5f80b394c5%3A0xf83aec2d1b016b61!2sF%C3%AAnix%20Capivari%20-%20Inform%C3%A1tica%20e%20Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1744206413011!5m2!1spt-BR!2sbr"
+                width="100%"
+                height="100%"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+          </section>
+          
+          
+        
     </main>
 
+    <script defer src="/javascript/carrosel.js"></script>
+    <script src="/javascript/menu.js"></script>
+    <script src="/javascript/dropmenu.js"></script>
+    <script src="/javascript/marcasCarrossel.js" ></script>
+    <script src="/javascript/marcas.js" defer></script>
+    <script src="/javascript/teste.js" ></script>
+    <script src="/javascript/footer.js" ></script>
+    <script src="/javascript/testemenu.js" ></script>
+    
     <footer>
-        <p>© 2025 TecUP - Todos os direitos reservados.</p>
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3>Fenix Capivari</h3>
+          <br>
+          <p>Desde 2002 oferecendo soluções inovadoras que transformam sua experiência em algo único.</p>
+        </div>
+    
+        <div class="footer-col">
+          <h4>Links Rápidos</h4>
+          <br>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#quem-somos">Quem Somos</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#formulario-contato">Contato</a></li>
+          </ul>
+        </div>
+    
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <br>
+          <p>📍 Rua Bento Dias, 588 - Centro</p>
+          <p>📞 (19) 99679-4333</p>
+          <p>✉️ vendas@fenixcapivari.com.br</p>
+        </div>
+    
+        <div class="footer-col">
+          <h4>Venha nos conhecer!</h4>
+          <br>
+          <p>Visite nossa loja e descubra tudo o que temos a oferecer.</p>
+          <a href="#formulario-contato" class="botao-loja">Fale Conosco</a>
+        </div>
+      </div>
+    
+      <div class="footer-bottom">
+        <p>&copy; 2025 TecUp - Soluções Inteligentes em Web e Dados. Todos os direitos reservados.</p>
+      </div>
     </footer>
+    
+    
+    
+    
+
 </body>
 </html>
