@@ -549,7 +549,7 @@ img {
 }
 
 .carrossel-container {
-    width: 95vw;
+    width: 75vw;
     max-width: 100%;
     margin: 40px auto;
     overflow: hidden;
@@ -561,6 +561,39 @@ img {
     height: 30.86vw;
     background-color: transparent;
   }
+
+  @media (max-width: 1024px) and (min-width: 769px) {
+    .carrossel-container {
+      width: 85vw;
+    }
+  
+    .carrossel {
+      height: 40vw;
+    }
+  
+    .bolinha {
+      width: 12px;
+      height: 12px;
+      margin: 0 5px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .carrossel-container {
+      width: 90vw;
+    }
+  
+    .carrossel {
+      height: 50vw; /* Aumenta a altura no mobile */
+    }
+  
+    .bolinha {
+      width: 12px;
+      height: 12px;
+      margin: 0 4px;
+    }
+  }
+  
   
   .slide {
     width: 100%;
