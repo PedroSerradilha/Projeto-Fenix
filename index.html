@@ -10,12 +10,12 @@
     <link rel="icon" type="image/png" href="/img/logo.fenix1.png">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script defer src="script.js"></script>
-</head>
+  </head>
 <body>
 
     <header>
       <div class="logo">
-          <img src="img/logo.fenix1.png" alt="Logo da Loja">
+          <img src="img/logo.fenix2.png" alt="Logo da Loja">
       </div>
 
       <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
@@ -29,8 +29,13 @@
       </nav>
   </header>
 
+  <section class="banner-topo">
+    <img src="img/banner-fenix1.png" alt="Banner da Loja Fênix" class="banner-img">
+  </section>
+
     <main>
 
+        <!-- 
         <div class="carrossel-container">
             <div class="carrossel">
               <img src="img/frentefenix.png" class="slide ativo" alt="Imagem 1">
@@ -43,6 +48,9 @@
               <span class="bolinha" onclick="mudarSlide(2)"></span>
             </div>
         </div>
+        -->
+
+        <section id="destaque" class="secao-carddestaque-completa">
 
         <section id="servicos"  class="card-destaque">
             <div class="conteudo-card">
@@ -71,9 +79,16 @@
                 <br>
                 <p>Serviços técnicos com foco em precisão e qualidade, ideais para consertos detalhados e específicos em equipamentos variados.</p>
             </div>
+            <div class="card">
+              <img class="imagem-card" src="img/repaespeciL.png" alt="Reparos Especializados">
+              <h2>Reparos Especializados</h2>
+              <br>
+              <p>Serviços técnicos com foco em precisão e qualidade, ideais para consertos detalhados e específicos em equipamentos variados.</p>
+            </div>
         </section>
-
+        </section>
         
+        <!--<div class="rgb-animated-divider"></div>-->
               
         <section id="produtos" class="secao-produto-completa">
 
@@ -188,11 +203,13 @@
         
         <br><br><br><br>
 
+        <section id="quem somos" class="secao-quemsomos-completa">
+
         <section id="quem-somos" class="secao-quem-somos">
           <div class="texto-quem-somos">
               <h1>Quem somos?</h1>
               <p>
-                  Desde 2002, a <strong>Loja Fênix</strong> tem se dedicado a oferecer uma ampla variedade de produtos e soluções para atender às necessidades dos nossos clientes.
+                  Desde 2003, a <strong>Loja Fênix</strong> tem se dedicado a oferecer uma ampla variedade de produtos e soluções para atender às necessidades dos nossos clientes.
                   Com uma equipe de profissionais qualificados e em constante treinamento, garantimos um atendimento ágil, eficiente e personalizado.
               </p>
               <p>
@@ -205,6 +222,9 @@
               <img src="../img/frentefenix.png" alt="Imagem representando a Loja Fênix">
           </div>
         </section>
+        </section>
+
+        <section id="vantagens" class="secao-vantagem-completa">
       
 
         <section class="vantagens">
@@ -244,7 +264,10 @@
                 <p>Montamos o computador ideal para sua necessidade, seja para jogos, trabalho ou estudos.</p>
               </div>
             </div>
-          </section>                         
+          </section>
+          </section>
+          
+          <section id="vantagens" class="secao-formulario-completa">
 
         <section id="form"  class="titulo-produtos2">
           <h1>Entre em contato conosco!</h1>
@@ -254,7 +277,7 @@
             <div class="espaco-em-branco"></div>
             <div class="container">
               <div class="formulario">
-                <form method="post" id="contact-form">
+                <form action="https://formspree.io/f/mnndgwlr"  method="post" id="contact-form">
                   <div class="custom-select-wrapper">
                     <div class="custom-select" id="dropdown">
                       <span id="selected">Escolha uma opção</span>
@@ -293,14 +316,8 @@
                   <p>Telefone: (19) 3491-6333</p>
                   <p>Whatsapp: (19) 99679-4333</p>
                   <div class="redes-sociais">
-                    <a href="https://wa.me/5519996794333" target="_blank" class="whatsapp">
-                      <i class="fab fa-whatsapp"></i>
-                    </a>
-                    <a href="https://www.instagram.com/fenixcapivari" target="_blank" class="instagram">
-                      <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="mailto:vendas@fenixcapivari.com.br?subject=Solicitação%20de%20Orçamento&body=Olá,%20gostaria%20de%20um%20orçamento%20para%20o%20seguinte%20serviço:" class="email">
-                      <i class="fas fa-envelope"></i>
+                    <a href="vendas@fenixcapivari.com.br" class="email">
+                        <i class="fas fa-envelope"></i>
                     </a>
                   </div>
                 </div>
@@ -308,6 +325,7 @@
             </div>
           </div>
           </section>
+          
 
           <br><br><br><br>
 
@@ -327,9 +345,29 @@
                 referrerpolicy="no-referrer-when-downgrade">
               </iframe>
           </section>
-          
-          
-        
+          </section>
+
+          <!-- Botões flutuantes -->
+          <div class="floating-buttons">
+            <a href="https://wa.me/5519996794333" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="whatsapp-button" 
+              aria-label="Abrir WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/fenixcapivari" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="instagram-button" 
+              aria-label="Abrir Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+
+
+
+
     </main>
 
     <script defer src="/javascript/carrosel.js"></script>
@@ -346,7 +384,7 @@
         <div class="footer-col">
           <h3>Fenix Capivari</h3>
           <br>
-          <p>Desde 2002 oferecendo soluções inovadoras que transformam sua experiência em algo único.</p>
+          <p>Desde 2003 oferecendo soluções inovadoras que transformam sua experiência em algo único.</p>
         </div>
     
         <div class="footer-col">
