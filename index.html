@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fenix Capivari - Informática e Tecnologia</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="../css/teste.css">
-    <link rel="stylesheet" href="../css/contato.css">
+    <link rel="stylesheet" href="./css/teste.css">
+    <link rel="stylesheet" href="./css/contato.css">
     <link rel="icon" type="image/png" href="/img/logo.fenix1.png">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script defer src="script.js"></script>
-</head>
+  </head>
 <body>
 
     <header>
       <div class="logo">
-          <img src="img/logo.fenix1.png" alt="Logo da Loja">
+          <img src="./img/logo.fenix2.png" alt="Logo da Loja">
       </div>
 
       <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
@@ -29,8 +29,13 @@
       </nav>
   </header>
 
+  <section class="banner-topo">
+    <img src="./img/frentefenix (2).png" alt="Banner da Loja Fênix" class="banner-img">
+  </section>
+  
     <main>
 
+        <!-- 
         <div class="carrossel-container">
             <div class="carrossel">
               <img src="img/frentefenix.png" class="slide ativo" alt="Imagem 1">
@@ -43,66 +48,96 @@
               <span class="bolinha" onclick="mudarSlide(2)"></span>
             </div>
         </div>
+        -->
 
-        <section id="quem-somos" class="secao-quem-somos">
-          <div class="imagem-quem-somos">
-              <img src="../img/frentefenix.png" alt="Imagem representando a TecUp">
-          </div>
-          <div class="texto-quem-somos">
-              <h1>Quem somos?</h1>
-              <p>
-                  Desde 2002, a <strong>Loja Fênix</strong> tem se dedicado a oferecer uma ampla variedade de produtos e soluções para atender às necessidades dos nossos clientes.
-                  Com uma equipe de profissionais qualificados e em constante treinamento, garantimos um atendimento ágil, eficiente e personalizado.
-              </p>
-              <p>
-                  Nosso compromisso é proporcionar uma experiência de compra diferenciada e de confiança.
-                  <strong>Consulte-nos e descubra como podemos ajudar você!</strong>
-              </p>
-          </div>
-      </section>
+        <section id="destaque" class="secao-carddestaque-completa">
 
         <section id="servicos"  class="card-destaque">
             <div class="conteudo-card">
               <h2>Por que escolher a Fênix Capivari?</h2>
-              <p>Com anos de experiência no mercado de tecnologia, somos especialistas em manutenção de equipamentos de informática e eletrônicos, oferecendo produtos e serviços de qualidade.</p>
+              <p>Desde 2003 atuando no mercado de tecnologia, somos uma empresa experiente e especializada na venda e manutenção de equipamentos de informática e tecnologia, oferecendo produtos e serviços de qualidade, com agilidade, excelente custo benefício e garantia.
+              </p>
               <div class="chamada-destaque"> Conheça nossos serviços abaixo</div>
             </div>
           </section>
         
-        <section class="servicos">
-            <div class="card">
-                <img class="imagem-card" src="img/manucompL.png" alt="Manutenção de Computadores">
-                <h2>Manutenção de Computadores</h2>
-                <br>
-                <p>Serviço que garante o bom desempenho do seu equipamento, com limpeza, correções, atualizações e otimizações.</p>
-            </div>
-            <div class="card">
-                <img class="imagem-card" src="img/manueletroL.png" alt="Manutenção de Eletrônicos">
-                <h2>Manutenção de Eletrônicos</h2>
-                <br>
-                <p>Cuidamos do reparo e bom funcionamento de diversos aparelhos, com diagnósticos precisos e soluções rápidas.</p>
-            </div>
-            <div class="card">
-                <img class="imagem-card" src="img/repaespeciL.png" alt="Reparos Especializados">
-                <h2>Reparos Especializados</h2>
-                <br>
-                <p>Serviços técnicos com foco em precisão e qualidade, ideais para consertos detalhados e específicos em equipamentos variados.</p>
-            </div>
-        </section>
+        <br><br>
 
+        <section class="nossos-servicos">
+            <section class="titulo-produtos2">
+              <h1>Nossos serviços</h1>
+              <br><br>
+            </section>
+            <div class="nossos-servicos-container">
+              <div class="nossos-servicos-card">
+                <img src="./img/chave-fenda.png" alt="Atendimento Personalizado">
+                <h3>Manutenção de eletrônicos em geral</h3>
+              </div>
+              <div class="nossos-servicos-card">
+                <img src="./img/disco-hd.png" alt="Garantia e Qualidade">
+                <h3>Clonagem e formatação de disco</h3>
+              </div>
+              <div class="nossos-servicos-card">
+                <img src="./img/pen-drive.png" alt="Entrega Rápida">
+                <h3>Instalação de drivers e programas</h3>
+              </div>
+              <div class="nossos-servicos-card">
+                <img src="./img/vista-tecnica.png" alt="Suporte Técnico">
+                <h3>Visitas técnicas</h3>
+              </div>
+              <div class="nossos-servicos-card">
+                <img src="./img/projeto-infra.png" alt="Variedade de Produtos">
+                <h3>Projetos de infra personalizados</h3>
+              </div>
+              <div class="nossos-servicos-card">
+                <img src="./img/upgrade-13.png" alt="Preços Competitivos">
+                <h3>Upgrades e troca de peças</h3>              </div>
+              </div>
+            </div>
+  
+            <!-- Segunda sessão -->
+
+            <div class="nossos-servicos-container">
+              <div class="nossos-servicos-card">
+                <img src="./img/cabo-rede.png" alt="Atendimento Personalizado">
+                <h3>Clipagem de cabos de rede</h3>
+              </div>
+              <div class="nossos-servicos-card">
+                <img src="./img/roteador.png" alt="Garantia e Qualidade">
+                <h3>Configuração de roteadores</h3>
+              </div>
+              <div class="nossos-servicos-card">
+                <img src="./img/pasta-termica.png" alt="Entrega Rápida">
+                <h3>Limpeza completa e troca da pasta térmica</h3>
+              </div>
+              <div class="nossos-servicos-card">
+                <img src="./img/manutencao-pc.png" alt="Suporte Técnico">
+                <h3>Manutenções preventivas e corretivas</h3>
+              </div>
+              <div class="nossos-servicos-card">
+                <img src="./img/acesso-remoto.png" alt="Variedade de Produtos">
+                <h3>Acesso remoto</h3>
+              </div>
+              <div class="nossos-servicos-card">
+                <img src="./img/backup-dados.png" alt="Preços Competitivos">
+                <h3>Backup de arquivos</h3>              </div>
+              </div>
+            </div>
+      </section>
         
+        <!--<div class="rgb-animated-divider"></div>-->
               
         <section id="produtos" class="secao-produto-completa">
 
             <!-- Título principal da seção -->
             <div class="titulo-produtos">
-                <h1>Nossa linha de produtos!</h1>
+                <h1>Nossa linha de produtos</h1>
             </div>
         
             <!-- Seção Computadores -->
             <section id="desenvolvimento-web" class="pagina-servico">
                 <div class="imagem-servico">
-                    <img src="../img/computadorB.png" alt="Desenvolvimento Web">
+                    <img src="./img/computadorB.png" alt="Desenvolvimento Web">
                 </div>
                 <div class="texto-servico">
                     <h1>Computadores</h1>
@@ -123,13 +158,13 @@
             </section>
 
             <div class="divisor-secao">
-                <img src="../img/divisor-laranja.png" alt="Divisor Laranja">
+                <img src="./img/divisor-laranja.png" alt="Divisor Laranja">
             </div>
         
             <!-- Seção Linha Gamer -->
             <section id="analise-dados" class="pagina-servico invertido pagina-analise-dados">
                 <div class="imagem-servico imagem-analise-dados">
-                    <img src="../img/linhagamerB.png" alt="Análise de Dados">
+                    <img src="./img/linhagamerB.png" alt="Análise de Dados">
                 </div>
                 <div class="texto-servico texto-analise-dados">
                     <h1>Linha Gamer</h1>
@@ -150,13 +185,13 @@
             </section>
 
             <div class="divisor-secao">
-                <img src="../img/divisor-laranja.png" alt="Divisor Laranja">
+                <img src="./img/divisor-laranja.png" alt="Divisor Laranja">
             </div>
         
             <!-- Seção Tecnologia -->
             <section id="seo" class="pagina-servico pagina-seo">
                 <div class="imagem-servico">
-                    <img src="../img/tecnologiaB.png" alt="Search Engine Optimization">
+                    <img src="./img/tecnologiaB.png" alt="Search Engine Optimization">
                 </div>
                 <div class="texto-servico texto-seo">
                     <h1>Tecnologia</h1>
@@ -175,13 +210,13 @@
             </section>
 
             <div class="divisor-secao">
-                <img src="../img/divisor-laranja.png" alt="Divisor Laranja">
+                <img src="./img/divisor-laranja.png" alt="Divisor Laranja">
             </div>
         
             <!-- Seção Office -->
             <section id="office" class="pagina-servico invertido">
                 <div class="imagem-servico">
-                    <img src="../img/linhaofficeB.png" alt="Search Engine Optimization">
+                    <img src="./img/linhaofficeB.png" alt="Search Engine Optimization">
                 </div>
                 <div class="texto-servico">
                     <h1>Linha Office</h1>
@@ -200,9 +235,82 @@
                     </ul>
                 </div>
             </section>
-        
+
+            <div class="divisor-secao">
+                <img src="./img/divisor-laranja.png" alt="Divisor Laranja">
+            </div>
+
+            <!-- Seção Linha Corporativa -->
+            <section id="corporativa" class="pagina-servico pagina-seo">
+              <div class="imagem-servico">
+                <img src="./img/corporativa.png" alt="Search Engine Optimization">
+              </div>
+              <div class="texto-servico">
+                <h1>Linha Corporativa</h1>
+                  <p>Soluções completas para equipar e proteger seu ambiente empresarial.</p>
+                  <ul>
+                    <li><strong>Linha completa de periféricos.</strong></li>
+                    <p></p>
+
+                    <li><strong>CPUs e Notebooks.</strong></li>
+                    <p></p>
+
+                    <li><strong>Redes e Racks.</strong></li>
+                    <p></p>
+
+                    <li><strong>Equipamentos de energia (estabilizadores, nobreaks, filtros de linha e transformadores).</strong></li>
+                    <p></p>
+
+                    <li><strong>Programas de licenciamento.</strong></li>
+                    <p></p>
+
+                    <li><strong>Bobinas e etiquetas térmicas.</strong></li>
+                    <p></p>
+
+                    <li><strong>Leitores de Código de barras.</strong></li>
+                    <p></p>
+
+                    <li><strong>Impressoras de médio e grande porte.</strong></li>
+                    <p></p>
+
+                    <li><strong>Impressoras Térmicas.</strong></li>
+                    <p></p>
+
+                    <li><strong>Cilindros e Toners (originais e compatíveis).</strong></li>
+                    <p></p>
+                  </ul>
+                </div>
+              </section>
         </section>
         
+        <br><br><br><br>
+
+        <section id="quem somos" class="secao-quemsomos-completa">
+
+        <section id="quem-somos" class="secao-quem-somos">
+          <div class="texto-quem-somos">
+              <h1>Quem somos?</h1>
+              <p>
+                  Desde 2003, nós da <strong>Loja Fênix</strong> temos nos dedicado a oferecer uma ampla variedade de produtos 
+                  e soluções para atender às necessidades dos nossos clientes.
+                  Com uma equipe de profissionais qualificados e em constante treinamento, garantimos um atendimento ágil, eficiente e personalizado.
+
+              </p>
+              <p>
+                Nosso compromisso é proporcionar uma experiência de compra diferenciada e de confiança. 
+                  <strong>Consulte-nos e descubra como podemos ajudar você!</strong>
+              </p>
+          </div>
+      
+          <div class="imagem-quem-somos">
+              <img src="./img/frentefenix.png" alt="Imagem representando a Loja Fênix">
+          </div>
+        </section>
+        </section>
+
+        <section id="vantagens" class="secao-vantagem-completa">
+      
+
         <section class="vantagens">
             <section class="titulo-produtos2">
               <h1>Vantagens de Comprar Conosco</h1>
@@ -210,37 +318,40 @@
             </section>
             <div class="vantagens-container">
               <div class="vantagem-card">
-                <img src="../img/garantia.png" alt="Atendimento Personalizado">
+                <img src="./img/garantia.png" alt="Atendimento Personalizado">
                 <h3>Garantia e Confiança</h3>
                 <p>Todos os serviços e produtos têm garantia e passam por verificação de qualidade.</p>
               </div>
               <div class="vantagem-card">
-                <img src="../img/atendimento.png" alt="Garantia e Qualidade">
+                <img src="./img/atendimento.png" alt="Garantia e Qualidade">
                 <h3>Atendimento Personalizado</h3>
                 <p>Soluções sob medida para cada cliente, com atenção e cuidado em cada detalhe.</p>
               </div>
               <div class="vantagem-card">
-                <img src="../img/qualidade.png" alt="Entrega Rápida">
+                <img src="./img/qualidade.png" alt="Entrega Rápida">
                 <h3>Qualidade</h3>
                 <p>Trabalhamos com marcas confiáveis e produtos originais.</p>
               </div>
               <div class="vantagem-card">
-                <img src="../img/suptec.png" alt="Suporte Técnico">
+                <img src="./img/suptec.png" alt="Suporte Técnico">
                 <h3>Suporte Técnico Especializado</h3>
                 <p>Nossa equipe é qualificada para te ajudar antes, durante e depois da compra, com manutenção especializada.</p>
               </div>
               <div class="vantagem-card">
-                <img src="../img/agiliefi.png" alt="Variedade de Produtos">
+                <img src="./img/agiliefi.png" alt="Variedade de Produtos">
                 <h3>Agilidade e Eficiência</h3>
                 <p>Serviços realizados com rapidez, sem abrir mão da qualidade.</p>
               </div>
               <div class="vantagem-card">
-                <img src="../img/montagempc.png" alt="Preços Competitivos">
+                <img src="./img/montagempc.png" alt="Preços Competitivos">
                 <h3>Montagem de PCs Sob Medida</h3>
                 <p>Montamos o computador ideal para sua necessidade, seja para jogos, trabalho ou estudos.</p>
               </div>
             </div>
-          </section>                         
+          </section>
+          </section>
+          
+          <section id="vantagens" class="secao-formulario-completa">
 
         <section id="form"  class="titulo-produtos2">
           <h1>Entre em contato conosco!</h1>
@@ -250,7 +361,7 @@
             <div class="espaco-em-branco"></div>
             <div class="container">
               <div class="formulario">
-                <form method="post" id="contact-form">
+                <form action="https://formspree.io/f/mblyzlkr" method="post" id="contact-form">
                   <div class="custom-select-wrapper">
                     <div class="custom-select" id="dropdown">
                       <span id="selected">Escolha uma opção</span>
@@ -284,26 +395,21 @@
                   <p>Segunda a Sexta das 08:30 às 18:00</p>
                   <p>Sábado das 09:00 às 12:30</p>
                   <p style="font-size: 18px;"><strong>Email:</strong></p>
-                  <p>vendas@fenixcapivari.com.br</p>
+                  <p>contato@fenixcapivari.com.br</p>
                   <p style="font-size: 18px;"><strong>Nossos meios de contato:</strong></p>
                   <p>Telefone: (19) 3491-6333</p>
                   <p>Whatsapp: (19) 99679-4333</p>
                   <div class="redes-sociais">
-                    <a href="https://wa.me/5519996794333" target="_blank" class="whatsapp">
-                      <i class="fab fa-whatsapp"></i>
-                    </a>
-                    <a href="https://www.instagram.com/fenixcapivari" target="_blank" class="instagram">
-                      <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="vendas@fenixcapivari.com.br" class="email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                  </div>
+                    <a href="mailto:contato@fenixcapivari.com.br?subject=Orçamento&body=Olá, gostaria de saber mais sobre os seus serviços." class="email" target="_blank">
+                      <i class="fas fa-envelope"></i>
+                    </a>                    
+                  </div>                                                                       
                 </div>
               </div>
             </div>
           </div>
           </section>
+          
 
           <br><br><br><br>
 
@@ -323,26 +429,46 @@
                 referrerpolicy="no-referrer-when-downgrade">
               </iframe>
           </section>
-          
-          
-        
+          </section>
+
+          <!-- Botões flutuantes -->
+          <div class="floating-buttons">
+            <a href="https://wa.me/5519996794333" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="whatsapp-button" 
+              aria-label="Abrir WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/fenixcapivari" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="instagram-button" 
+              aria-label="Abrir Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+
+
+
+
     </main>
 
-    <script defer src="/javascript/carrosel.js"></script>
-    <script src="/javascript/menu.js"></script>
-    <script src="/javascript/dropmenu.js"></script>
-    <script src="/javascript/marcasCarrossel.js" ></script>
-    <script src="/javascript/marcas.js" defer></script>
-    <script src="/javascript/teste.js" ></script>
-    <script src="/javascript/footer.js" ></script>
-    <script src="/javascript/testemenu.js" ></script>
+    <script defer src="./javascript/carrosel.js"></script>
+    <script src="./javascript/menu.js"></script>
+    <script src="./javascript/dropmenu.js"></script>
+    <script src="./javascript/marcasCarrossel.js" ></script>
+    <script src="./javascript/marcas.js" defer></script>
+    <script src="./javascript/teste.js" ></script>
+    <script src="./javascript/footer.js" ></script>
+    <script src="./javascript/testemenu.js" ></script>
     
     <footer>
       <div class="footer-container">
         <div class="footer-col">
           <h3>Fenix Capivari</h3>
           <br>
-          <p>Desde 2002 oferecendo soluções inovadoras que transformam sua experiência em algo único.</p>
+          <p>Desde 2003 oferecendo soluções completas que facilitam e transformam sua experiência em informática e tecnologia.</p>
         </div>
     
         <div class="footer-col">
@@ -359,9 +485,10 @@
         <div class="footer-col">
           <h4>Contato</h4>
           <br>
-          <p>📍 Rua Bento Dias, 588 - Centro</p>
+          <p>📍 Rua Bento Dias, 588 - Centro, Capivari/SP</p>
           <p>📞 (19) 99679-4333</p>
-          <p>✉️ vendas@fenixcapivari.com.br</p>
+          <p>☎️ (19) 3491-6333</p>
+          <p>✉️ contato@fenixcapivari.com.br</p>
         </div>
     
         <div class="footer-col">
@@ -371,6 +498,10 @@
           <a href="#formulario-contato" class="botao-loja">Fale Conosco</a>
         </div>
       </div>
+
+      <br><br>
+      <p class="cnpj-footer">CNPJ: 06.016.443/0001-57</p>
+      <br>
     
       <div class="footer-bottom">
         <p>&copy; 2025 TecUp - Soluções Inteligentes em Web e Dados. Todos os direitos reservados.</p>

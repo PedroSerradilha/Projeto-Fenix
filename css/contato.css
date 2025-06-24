@@ -34,6 +34,14 @@ body {
     width: 100%;
 }
 
+.secao-formulario-completa {
+    background-color: #232323;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 60px 0;
+    margin-top: -60px; /* Mesma altura que a logo sai do header */
+  }
+
 
 .espaco-em-branco {
     height: 50px; /* ajuste o valor para o espaço desejado */
@@ -110,6 +118,7 @@ footer {
     padding: 20px;
     margin-top: auto; /* Empurra o footer para o final */
     width: 100%;
+    margin-top: -40px;
 }
 
 
